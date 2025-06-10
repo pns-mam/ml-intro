@@ -44,7 +44,7 @@ The class will meet 6 times (5 x 4h + 6h), the last meeting being dedicated to t
 * Afternoons of Tu,W, 130pm-530pm
 * Evaluation on Friday afternoon 1pm-7pm
 
-The project will be evaluated in groups of 2.
+The project will be evaluated in groups of 3, randomly chosen.
 
 The evaluation will be done based on
 * A small presentation
