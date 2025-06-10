@@ -118,7 +118,7 @@ class ZonalInfoPreprocessing(BaseEstimator, TransformerMixin):
 # TODO: Create a single sklearn object handling the computation of all features in parallel
 all_features = None
 
-F = all_features.fit(X,y).transform(X)
+F = all_features.fit(X_train,y).transform(X_train)
 # Let's make sure we have the number of dimensions that we expect!
 print("Nb features computed: ", F.shape[1])
 
