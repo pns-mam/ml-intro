@@ -91,6 +91,7 @@ This will be further clarified in class.
 First clone this repository
 
 > git clone git@github.com:pns-mam/ml-intro.git 
+
 > cd ml-intro
 
 Then create a virtual environment to contain your work. 
