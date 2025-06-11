@@ -51,12 +51,20 @@ The evaluation will be done based on
 * A small presentation
 * A test code run of your work
 * A report detailing your findings and choices made
+* 10 minutes of presentation followed by 10 minutes of questions
 
 In particular, throughout the course, you will be given 3 scripts to fill out to guide you on your learning process. 
 They should be sent to us before the evaluation. 
 But the evaluation will use a 4 small script containing your final algorithmic choices. 
 The outcome of this final script should be a model on which a `predict` and/or a `score` function can be applied and which we will use on one of our databases.
 This will be further clarified in class. 
+
+Deliverables due on Friday June 13th, 12h30:
+* The three scripts provided to you, but with your own code
+* A report detailing your findings and research process
+* A presentation for your oral examination
+* The last test script containing your final choice as algorithm
+
 
 
 ## Tentative plan
