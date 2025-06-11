@@ -1,3 +1,4 @@
+![PNS](logo-pns.png)
 # Machine Learning in Python
 Course taught within a 1-week project @Polytech Sophia - MAM 3.
 
