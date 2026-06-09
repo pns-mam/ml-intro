@@ -33,7 +33,7 @@ IMG_FULL = os.path.join(PATH_TO_DB, IMG_DB)
 
 TARGET_SIZE = (64, 64) 
 
-os.makedirs('figures', exist_ok=True)
+FIGS = 'figures'
 
 ##########################################
 ## 1. Load Dataset
@@ -404,6 +404,7 @@ def compute_hog(image, nb_height_cells=4, nb_width_cells=4, nb_bins=8):
 # =========================================================================
 if __name__ == '__main__':
     print("Step 1: Loading Dataset")
+    os.makedirs(FIGS, exist_ok=True)
     
     bw_imgs, bw_dogs, labels, label_names = read_and_crop_db(color=False)
     
