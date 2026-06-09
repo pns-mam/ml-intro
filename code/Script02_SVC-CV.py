@@ -12,11 +12,14 @@ from sklearn.base import BaseEstimator, TransformerMixin
 
 # Ensure you have your utils.py file or these functions available in your environment
 try:
-    from Script01_PreprocessingExploration import compute_hog, my_PCA, TARGET_SIZE
+    from Script01_PreprocessingExploration import compute_hog, my_PCA, TARGET_SIZE, read_and_crop_db, get_resized_db, convert_ndarrays2data_matrix
 except ImportError:
     # Safe defaults if utils are missing during initial setup
     TARGET_SIZE = (64, 64)
+    def read_and_crop_db(subset_dogs=None, TO_DB=PATH_TO_DB, color=True): return np.zeros((100, TARGET_SIZE[0]*TARGET_SIZE[1])), np.zeros(100, dtype=int)
+    def get_resized_db(dogs, target_size=TARGET_SIZE, pad_type='white'): return np.zeros((len(dogs), target_size[0]*target_size[1]))
     def my_PCA(data, n_components=5): pass
+    def convert_ndarrays2data_matrix(arr): return arr
     def compute_hog(image, nb_h_cells, nb_w_cells, nb_bins): return np.zeros(nb_h_cells*nb_w_cells*nb_bins)
     def load_dict(f): return {0: 'Chihuahua', 1: 'Pug', 2: 'Malamute', 3: 'Beagle'}
 
