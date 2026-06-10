@@ -556,3 +556,12 @@ if __name__ == '__main__':
     print(f" Testing Error Rate (Generalization Loss):  {test_err*100:.2f}%")
     print("="*50)
     print(f"All figures successfully saved inside the '{FIGS}/' folder.")
+
+    # Saving all preprocessed data for the next module (SVC-CV)
+    np.save("X_train_standard.npy", X_train_scaled)
+    np.save("X_test_standard.npy", X_test_scaled)
+    np.save("y_train_standard.npy", y_train)
+    np.save("y_test_standard.npy", y_test)
+    save_dict("lbl_names.npy", label_names)
+    np.save("labels.npy", labels)
+    
