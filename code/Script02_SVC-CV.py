@@ -12,7 +12,7 @@ from sklearn.base import BaseEstimator, TransformerMixin
 
 # Ensure you have your utils.py file or these functions available in your environment
 try:
-    from Script01_PreprocessingExploration import compute_hog, my_PCA, TARGET_SIZE, read_and_crop_db, get_resized_db, convert_ndarrays2data_matrix
+    from Script01_PreprocessingExploration import compute_hog, my_PCA, TARGET_SIZE, read_and_crop_db, get_resized_db, convert_ndarrays2data_matrix, load_dict
 except ImportError:
     # Safe defaults if utils are missing during initial setup
     TARGET_SIZE = (64, 64)

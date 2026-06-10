@@ -35,6 +35,17 @@ TARGET_SIZE = (64, 64)
 
 FIGS = 'figures'
 
+def save_dict(fname, dict):
+    with open(fname, 'wb') as f:
+        pickle.dump(dict, f)
+
+
+def load_dict(fname):
+    with open(fname, 'rb') as f:
+        out = pickle.load(f)
+    return out
+
+
 ##########################################
 ## 1. Load Dataset
 ##########################################
