@@ -558,8 +558,8 @@ if __name__ == '__main__':
     print(f"All figures successfully saved inside the '{FIGS}/' folder.")
 
     # Saving all preprocessed data for the next module (SVC-CV)
-    np.save("X_train_standard.npy", X_train_scaled)
-    np.save("X_test_standard.npy", X_test_scaled)
+    np.save("X_train_standard.npy", data_train)
+    np.save("X_test_standard.npy", data_test)
     np.save("y_train_standard.npy", y_train)
     np.save("y_test_standard.npy", y_test)
     save_dict("lbl_names.npy", label_names)
